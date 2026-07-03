@@ -21,6 +21,6 @@ select
     c_acctbal as account_balance,
     'USD' as account_balance_currency,
     c_mktsegment as market_segment,
-    c_comment as comment
+    c_comment as comment -- new comment
 from source
 where dbt_valid_to is null
