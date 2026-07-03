@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_tpch__customer
+    description: "Customer data from TPCH system"
+    columns:
+      - name: customer_id
+        data_type: bigint
+        description: "Id column"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_tpch__lineitem
+    columns:
+      - name: receipt_date
+        data_tests:
+          - not_before:
+              arguments: 
+                compare_column: ship_date

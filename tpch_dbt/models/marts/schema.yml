@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customer data from TPCH system"
+    columns:
+      - name: nation_name
+        data_type: varchar
+        description: "nation name"
+        data_tests:
+          - not_null:
+              config: 
+                severity: warn
+      

@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: tpch
+    schema: main
+    description: "Raw data from TPCH system"
+    tables:
+      - name: customer
+        columns:
+          - name: c_custkey
+            tests:
+              - dbt_utils.accepted_range:
+                  arguments:
+                    min_value: 0
+                    max_value: 10000000000000
+                    inclusive: true
+      - name: lineitem
+      - name: nation
+      - name: orders
+      - name: part
+      - name: partsupp
+      - name: region
+      - name: supplier
+      - name: country_iso_code

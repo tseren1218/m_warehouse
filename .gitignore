@@ -1,0 +1,7 @@
+
+tpch_dbt/target/
+tpch_dbt/dbt_packages/
+tpch_dbt/logs/
+tpch_dbt/data/
+venv/
+.DS_Store

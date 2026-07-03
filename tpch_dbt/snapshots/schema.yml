@@ -1,0 +1,9 @@
+version: 2
+
+snapshot:
+    - name: scd_customer
+      config:
+        strategy: check
+
+    
+      

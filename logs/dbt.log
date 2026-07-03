@@ -1,0 +1,41 @@
+[0m09:48:42.667701 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 09:48:42.691723 | 1fee5237-131e-40de-b57f-4c6746e9e64b ==============================
+[0m09:48:42.691723 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:48:42.692334 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/tserendorj/.dbt', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'target_path': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'static_parser': 'True', 'log_path': 'logs', 'printer_width': '80', 'introspect': 'True', 'warn_error': 'None', 'log_format': 'default', 'partial_parse': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'quiet': 'False', 'indirect_selection': 'eager', 'empty': 'None'}
+[0m10:03:29.276012 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/include/starter_project
+[0m10:03:29.306386 [info ] [MainThread]: 
+Your new dbt project "tpch_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:03:29.307789 [info ] [MainThread]: Setting up your profile.
+[0m10:04:14.431748 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 931.80334, "process_in_blocks": "0", "process_kernel_time": 0.351195, "process_mem_max_rss": "107249664", "process_out_blocks": "0", "process_user_time": 1.034413}
+[0m10:04:14.432568 [debug] [MainThread]: Command `dbt init` succeeded at 10:04:14.432428 after 931.80 seconds
+[0m10:04:14.432974 [debug] [MainThread]: Flushing usage events
+[0m14:11:34.613462 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 14:11:34.639832 | b74a19d3-67ed-45b7-ac1f-5a2f9385a706 ==============================
+[0m14:11:34.639832 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:11:34.640309 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'indirect_selection': 'eager', 'log_format': 'default', 'quiet': 'False', 'write_json': 'True', 'profiles_dir': '/Users/tserendorj/.dbt', 'empty': 'False', 'use_colors': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select stg_tpch__customer -f', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'version_check': 'True', 'target_path': 'None', 'log_path': 'logs'}
+[0m14:11:34.640575 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/tserendorj/Documents/m_warehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:11:34.642292 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.06047479, "process_in_blocks": "0", "process_kernel_time": 0.122602, "process_mem_max_rss": "106250240", "process_out_blocks": "0", "process_user_time": 0.509673}
+[0m14:11:34.642509 [debug] [MainThread]: Command `dbt run` failed at 14:11:34.642467 after 0.06 seconds
+[0m14:11:34.642642 [debug] [MainThread]: Flushing usage events

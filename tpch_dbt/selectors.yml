@@ -1,0 +1,7 @@
+selectors:
+  - name: daily_advanced
+    definition:
+      intersection:
+        - tag: daily
+        - method: path
+          value: marts
