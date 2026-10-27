@@ -45,7 +45,7 @@ joined as (
 
         -- derived metrics
         l.extended_price * l.discount as discount_amount,
-        l.extended_price * (1 - l.discount) as net_price,
+        l.extended_price * (1 - l.discount) as discounted_amout,
         l.extended_price * (1 - l.discount) * (1 + l.tax) as gross_price,
 
         -- delivery flags
