@@ -51,7 +51,7 @@ joined as (
         -- delivery flags
         l.ship_date <= l.commit_date as is_shipped_on_time,
         l.receipt_date <= l.commit_date as is_received_on_time,
-        l.return_flag as is_returned
+        l.return_flag as returned_flag
 
     from orders o
     inner join lineitems l on o.order_id = l.order_id
